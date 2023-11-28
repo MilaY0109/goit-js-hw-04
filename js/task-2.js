@@ -5,8 +5,12 @@ function calcAverageCalories(days) {
     totalCal += item.calories;
   }
 
+if (days.length === 0) {
+    return 0;
+  }
   const averageCalor = totalCal / days.length;
-    return averageCalor;
+  return averageCalor;
+  
 }
 
 console.log(
